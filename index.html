@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Calculadora 💖</title>
+    <link rel="icon" type="image/x-icon" href="./assets/carta-de-amor.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="calculadora">
+          <div class="display">
+            <div id="valor-actual"></div>
+          </div>
+          <hr />
+          <div class="grid">
+            <div class="columna">
+              <button
+                id="binario"
+                class="boton-hexagonal"
+                style="background: green"
+                onClick="modificarBases(true,false,false)"
+              >
+                BIN</button
+              ><button
+                id="octal"
+                class="boton-hexagonal"
+                style="background: blue"
+                onClick="modificarBases(false,true,false)"
+              >
+                OCT</button
+              ><button
+                id="hexadecimal"
+                class="boton-hexagonal"
+                style="background: red"
+                onClick="modificarBases(false,false,true)"
+              >
+                HEX
+              </button>
+            </div>
+            <div class="columna-grande">
+              <button
+                id="pi"
+                class="boton-cuadrado"
+                style="
+                  background: orange;
+                  font-size: 16px;
+                  width: 30%;
+                  margin: 25px;
+                "
+                onClick="modificarResultado('3.14')"
+              >
+                π</button
+              ><button
+                id="aceleracion"
+                class="boton-cuadrado"
+                style="background: lightgreen"
+                onClick="modificarResultado('9.8')"
+              >
+                aceleración de la gravedad</button
+              ><button
+                id="primo100"
+                class="boton-cuadrado"
+                style="background: yellow"
+                onClick="modificarResultado('541')"
+              >
+                100° número primo</button
+              ><button
+                class="boton-cuadrado"
+                style="background: blue"
+                onClick="modificarResultado('317811')"
+              >
+                28° Termino de la serie fibonacci</button
+              ><button
+                id="perfecto"
+                class="boton-cuadrado rectangular"
+                style="background: lightskyblue"
+                onClick="modificarResultado('496')"
+              >
+                Número perfecto de 3 digitos
+              </button>
+            </div>
+            <div class="columna">
+              <button id="onoff" class="boton-redondo" style="background: red">
+                on/off</button
+              ><button
+                id="enter"
+                class="boton-vertical"
+                style="background: lightblue"
+              >
+                E<br />
+                N<br />
+                T<br />
+                E<br />
+                R
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./js/conversor.js"></script>
+  </body>
+</html>
